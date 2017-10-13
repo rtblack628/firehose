@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Splurty</title>
-    <%= csrf_meta_tags %>
+	<title>Splurty</title>
+	<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+	<header class="row">
+		<div class="col-3">
+			LOGO
+		</div>
+		<div class="col-4">
+			A collection of quotations from every part of the Pokémon World.
+		</div>
+		<div class="col-5">
+			<%= link_to 'Contribute', '#'%>
+			<%= link_to 'About', '#'%>
+		</div>
+	</header>
+
+	<br clear="clear" />
+
+	<%= yield %>
+
   </body>
 </html>
