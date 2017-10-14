@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
+
 .clear { 
   clear: both;
 }
@@ -38,6 +40,7 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'latobold', sans-serif;
 }
 
 header {
@@ -46,4 +49,13 @@ header {
 
 hr { 
   clear: both;
+}
+
+h1 {
+  font-family: 'latobold', sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'latoitalic', sans-serif;
 }
