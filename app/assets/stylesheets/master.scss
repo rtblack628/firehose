@@ -1,7 +1,5 @@
 @import "bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i');
-
 .clear { 
   clear: both;
 }
@@ -32,6 +30,13 @@
   padding-top: 26px;
 }
 
+.footer-blurb {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  text-align: right;
+  font-size: 12px;
+}
+
 .links {
   padding-top: 26px;
 }
@@ -58,4 +63,10 @@ h1 {
 
 h2 {
   font-family: 'latoitalic', sans-serif;
+}
+
+.next-quote {
+  color:#f84342;
+  font-family: 'latoitalic', sans-serif;
+  font-size:20px;
 }
