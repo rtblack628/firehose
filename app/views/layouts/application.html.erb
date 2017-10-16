@@ -36,21 +36,26 @@
 	<br clear="clear" />
 
 	<div class="container">
-      <%= yield %>
-    </div>
+		<% if flash[:error].present? %>
+			<div class="col-10 offset-1 alert alert-danger">
+				<%= flash[:error].html_safe %>
+			</div>
+		<% end %>
+		<%= yield %>
+  </div>
 
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-        		<%= link_to "This isn't enough, I need more...", root_path, class: 'next-quote' %>
-      		</div>
-      		<div class="col-6 footer-blurb">
-        		Created by <a href="http://www.robblack.me">Rob Black</a> in Los Angeles, CA.
-      		</div>
-        </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+      		<%= link_to "This isn't enough, I need more...", root_path, class: 'next-quote' %>
+    		</div>
+    		<div class="col-6 footer-blurb">
+      		Created by <a href="http://www.robblack.me">Rob Black</a> in Los Angeles, CA.
+    		</div>
       </div>
     </div>
+  </div>
 
   </body>
 </html>
